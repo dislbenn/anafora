@@ -16,7 +16,7 @@ module Config
         unless $GITHUB_TOKEN
             abort "GITHUB_TOKEN is required to be set to run this application.".red
         else
-            puts "GITHUB_TOKEN: #{$GITHUB_TOKEN}"
+            puts "GITHUB_TOKEN: #{$GITHUB_TOKEN}".green
         end
 
         # Set the squad label.
