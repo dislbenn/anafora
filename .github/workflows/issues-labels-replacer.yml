@@ -10,7 +10,7 @@ on:
     - cron: '0 8 * * 1-5' # Actions will be executed at 8am for every weekday.
 
 env:
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  GITHUB_TOKEN: ${{ github.token }}
 
 jobs:
   main:
